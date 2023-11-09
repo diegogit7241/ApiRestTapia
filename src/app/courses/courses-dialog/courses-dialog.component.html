@@ -1,0 +1,45 @@
+<br>
+        <br>
+<div mat-dialog-content>
+    <form [formGroup]="courseForm" class="createCourse">
+        <h1>Registro de nuevo Curso </h1>
+        <br>
+        <br>
+        <br>
+        <!-- <div class="row"> -->
+            
+                <mat-form-field >
+                    <mat-label>Nombre</mat-label>
+                    <input formControlName="name" matInput placeholder="Nombre">
+                    <mat-icon matSuffix>text_fields</mat-icon>
+                    <mat-error>Campo requerido</mat-error>
+                    
+                  </mat-form-field>
+                   <br>
+                <mat-form-field >
+                    <mat-label>Capacidad</mat-label>
+                    <input formControlName="capacity" matInput placeholder="Capacidad">
+                    <mat-icon matSuffix>text_fields</mat-icon>
+                    <mat-error>Campo requerido</mat-error>
+                  </mat-form-field>
+                  <br> 
+           
+                <mat-form-field >
+                    <mat-label>Horas</mat-label>
+                    <input formControlName="hours" matInput placeholder="Horas">
+                    <mat-icon matSuffix>text_fields</mat-icon>
+                    <mat-error>Campo requerido</mat-error>
+                  </mat-form-field>
+                          
+                    
+            
+        <!-- </div> -->
+    </form>
+</div>
+<div mat-dialog-actions>
+      
+    <button mat-flat-button  color="primary" mat-dialog-close="" mat-button>Cancelar</button>
+    <button mat-flat-button color="primary" (click)="onSubmit()" mat-button>Guardar</button>
+<br>
+<br>
+</div>

@@ -1,0 +1,30 @@
+<form [formGroup]="loginForm">
+    <div style="text-align:center">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h1>Inicio de sesión</h1>
+
+        <mat-form-field appearance="outline">
+            <mat-label>Fill form field</mat-label>
+            <input formControlName="email" matInput placeholder="Usuario">
+            <mat-icon matSuffix>text_fields</mat-icon>
+        </mat-form-field>
+        <br>
+        <mat-form-field appearance="outline">
+            <mat-label>Fill form field</mat-label>
+            <input formControlName="password" matInput placeholder="Password">
+            <mat-icon matSuffix>text_fields</mat-icon>
+        </mat-form-field>
+
+        <div mat-dialog-actions>      
+            <button mat-flat-button color="primary" (click)="login()" mat-button>Ingresar</button>
+            <br>
+            <br>
+        </div>
+
+</div>
+</form>
